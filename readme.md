@@ -14,7 +14,7 @@
 - First clone the project on your local computer
 ```
 git clone https://github.com/SacramenTeamClassroom/covid-data-sheet.git
-cd ultimate-miar-quizz
+cd covid-data-sheet
 ```
 
 #### Node js
