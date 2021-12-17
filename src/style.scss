@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Twemoji Mozilla';
+  src: local('Twemoji Mozilla'), url("assets/fonts/TwemojiMozilla.ttf");
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  > section {
+    width: 100%;
+  }
+}
+
+h1, h2 {
+  text-align: center;
+  padding: 5px 15px;
+}
+
+#actionBar {
+  display: grid;
+  place-items: center;
+}
+
+[scroll] {
+  overflow: auto scroll;
+  height: max(500px, 75vmin);
+}
+
+#chart {
+  height: 500px;
+}
+
+table {
+  margin: 0;
+  width: 100%;
+  white-space: nowrap;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: calc(0.75em + 0.5vw);
+}
+
+tr:nth-child(1) {
+  position: sticky;
+  background: #fff;
+  top: 0;
+}
+
+tr:nth-child(2n) {
+  background: #f5f5f5;
+}
+
+td {
+  text-align: end;
+  padding: 0 15px;
+}
+
+th {
+  padding: 15px;
+  padding-right: 35px;
+  border: solid 1px #5551;
+  background: #fff;
+}
+
+th:nth-child(1) {
+  text-align: center;
+}
+
+td:nth-child(1), .flag {
+  font-family: 'Twemoji Mozilla';
+  text-align: center;
+  font-size: 2em;
+}
+.flag {
+  display: grid;
+  place-items: center;
+}
+
+body {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+th:not(:nth-child(1)) {
+  cursor: pointer;
+  text-align: start;
+  position: relative;
+  &:hover {
+    filter: brightness(0.95);
+  }
+  &.dsc,&.asc {
+    filter: brightness(0.96);
+  }
+  &:after {
+    position: absolute;
+    right: 5px;
+    content: "";
+    text-align: end;
+  }
+  &.dsc:after {
+    content: "∨";
+  }
+  &.asc:after {
+    content: "∧"
+  }
+}

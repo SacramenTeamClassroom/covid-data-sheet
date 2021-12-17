@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <main>
+      <h1>Covid Data</h1>
+      <div id="actionBar">
+        <label for="nDisplay">Number of result displayed:</label>
+        <input type="number" name="nDisplay" value="10" min="0">
+      </div>
+      <section title="Covid sheet">
+        <h2>Donnés Covid croisé au PIB par habitant</h2>
+        <div scroll>
+          <table id="sheet">
+          
+          </table>
+        </div>
+      </section>
+      <section title="Covid graph">
+        <h2>Diagramme de dispersion</h2>
+        <div id="chart"></div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
