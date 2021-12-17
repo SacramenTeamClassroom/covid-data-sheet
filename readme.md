@@ -1,4 +1,4 @@
-# The ultimate quizz of MIAR
+# Covid Data Sheet
 
 ## 🚀 Tech stack
 
